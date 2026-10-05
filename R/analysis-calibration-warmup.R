@@ -42,7 +42,7 @@ lines(temp_filter$x[plot_sample], col = 2)
 # Optimise alpha / beta
 ma_size <- 1001
 ma <- as.numeric(filter(temp_filter$x, rep(1/ma_size, ma_size), sides = 2))
-lines(ma[plot_sample], col = 3, lwd = 1)
+lines(ma[plot_sample], col = 3, lwd = 2)
 
 fn <- function(par) {
   alpha = par[1]
